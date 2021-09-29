@@ -1,0 +1,189 @@
+* {
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+}
+
+body {
+		background-color: #111;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: 100vh;
+		overflow: hidden;
+		margin: 0;
+}
+
+.container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		overflow: hidden;
+		max-width: 90vw;
+		max-height: 72.5vh;
+}
+.container .start {
+		font-size: calc(15px + 15 * (100vw / 1980));
+		text-align: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-animation-name: color;
+		        animation-name: color;
+		-webkit-animation-duration: 5s;
+		        animation-duration: 5s;
+		-webkit-animation-iteration-count: infinite;
+		        animation-iteration-count: infinite;
+		font-family: "Orbitron", sans-serif;
+		cursor: pointer;
+}
+@-webkit-keyframes color {
+		0% {
+				color: rgba(247, 225, 225, 0.74);
+		}
+		10% {
+				color: rgba(253, 219, 219, 0.74);
+		}
+		20% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		30% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		40% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		50% {
+				color: rgba(255, 61, 61, 0.815);
+		}
+		60% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		70% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		80% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		90% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+		100% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+}
+@keyframes color {
+		0% {
+				color: rgba(247, 225, 225, 0.74);
+		}
+		10% {
+				color: rgba(253, 219, 219, 0.74);
+		}
+		20% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		30% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		40% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		50% {
+				color: rgba(255, 61, 61, 0.815);
+		}
+		60% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		70% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		80% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		90% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+		100% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+}
+.container .square {
+		width: 36px;
+		height: 36px;
+		background-color: #1d1d1d;
+		margin: 2px;
+		-webkit-box-shadow: 0 0 2px black;
+		        box-shadow: 0 0 2px black;
+		-webkit-transition: 2s ease;
+		transition: 2s ease;
+}
+.container .square:hover {
+		-webkit-transition-duration: 0s;
+		        transition-duration: 0s;
+}
+
+.reset {
+		display: none;
+		font-size: calc(15px + 15 * (100vw / 1980));
+		-webkit-animation-name: color;
+		        animation-name: color;
+		-webkit-animation-duration: 5s;
+		        animation-duration: 5s;
+		-webkit-animation-iteration-count: infinite;
+		        animation-iteration-count: infinite;
+		font-family: "Orbitron", sans-serif;
+		cursor: pointer;
+}
+@keyframes color {
+		0% {
+				color: rgba(247, 225, 225, 0.74);
+		}
+		10% {
+				color: rgba(253, 219, 219, 0.74);
+		}
+		20% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		30% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		40% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		50% {
+				color: rgba(255, 61, 61, 0.815);
+		}
+		60% {
+				color: rgba(255, 115, 115, 0.74);
+		}
+		70% {
+				color: rgba(253, 158, 158, 0.74);
+		}
+		80% {
+				color: rgba(253, 180, 180, 0.74);
+		}
+		90% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+		100% {
+				color: rgba(247, 247, 247, 0.74);
+		}
+}
+.reset.active {
+		display: block;
+		padding: 20px;
+}
